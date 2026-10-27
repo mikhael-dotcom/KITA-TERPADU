@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* 
+ * KITA (Kanal Informasi dan Terpadu Aspirasi) Theme Palette
+ * Warna Utama: Hijau Hutan / Emerald (#166534, #15803d, #047857)
+ * Latar: Cream / Beige Lembut (#fbf8f3, #f7f2e9, #faf6ef)
+ * Kartu: Putih Bersih (#ffffff)
+ * Netral: Abu-abu Soft (#f1f5f9, #e2e8f0, #64748b)
+ */
+
+:root {
+  --color-brand-green: #166534;
+  --color-brand-green-light: #15803d;
+  --color-brand-cream: #fbf8f3;
+  --color-brand-cream-card: #f5ede1;
+  --color-brand-beige: #faf4eb;
+  --color-brand-grey: #f1f5f9;
+}
+
+body {
+  background-color: #fbf8f3;
+  color: #1e293b;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Extra Large Font Styling - Dibuat Sangat Besar Sesuai Permintaan Lansia */
+body.font-large {
+  font-size: 1.25rem;
+}
+
+body.font-large h1 { font-size: 2.5rem !important; line-height: 1.25 !important; }
+body.font-large h2 { font-size: 2.15rem !important; line-height: 1.25 !important; }
+body.font-large h3 { font-size: 1.75rem !important; line-height: 1.3 !important; }
+body.font-large p, body.font-large span, body.font-large button, body.font-large label {
+  font-size: 1.2rem !important;
+}
+
+body.font-xlarge {
+  font-size: 1.5rem !important;
+  line-height: 1.7 !important;
+}
+
+body.font-xlarge h1 { font-size: 3.25rem !important; line-height: 1.2 !important; font-weight: 900 !important; }
+body.font-xlarge h2 { font-size: 2.75rem !important; line-height: 1.25 !important; font-weight: 900 !important; }
+body.font-xlarge h3 { font-size: 2.25rem !important; line-height: 1.3 !important; font-weight: 800 !important; }
+body.font-xlarge p, body.font-xlarge span, body.font-xlarge label {
+  font-size: 1.45rem !important;
+  line-height: 1.8 !important;
+}
+body.font-xlarge button, body.font-xlarge a {
+  font-size: 1.4rem !important;
+  min-height: 64px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+body.font-xlarge input, body.font-xlarge select {
+  font-size: 1.4rem !important;
+  min-height: 60px !important;
+}
+
+/* High Contrast Theme */
+body.theme-high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.theme-high-contrast * {
+  border-color: #facc15 !important;
+}
+
+body.theme-high-contrast .bg-white,
+body.theme-high-contrast .bg-emerald-50,
+body.theme-high-contrast .bg-amber-50,
+body.theme-high-contrast .bg-slate-50 {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+body.theme-high-contrast p,
+body.theme-high-contrast span,
+body.theme-high-contrast .text-slate-600,
+body.theme-high-contrast .text-slate-700 {
+  color: #f8fafc !important;
+}
+
+/* Motoric Mode (Target Sentuh Sangat Besar untuk Lansia & Disabilitas Motorik) */
+body.theme-motoric button,
+body.theme-motoric a,
+body.theme-motoric input,
+body.theme-motoric select,
+body.theme-motoric label {
+  min-height: 60px !important;
+  min-width: 60px !important;
+  font-size: 1.25rem !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+
+body.theme-motoric button:focus-visible,
+body.theme-motoric a:focus-visible {
+  outline: 5px solid #15803d !important;
+  outline-offset: 4px !important;
+}
+
+/* Print Styles */
+@media print {
+  header, nav, .no-print, .mobile-bottom-nav {
+    display: none !important;
+  }
+  
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "KITA Talaud",
+  "description": "KITA (Kanal Informasi dan Terpadu Aspirasi) Kabupaten Kepulauan Talaud. Portal pengarah layanan publik terintegrasi situs resmi pemerintah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
